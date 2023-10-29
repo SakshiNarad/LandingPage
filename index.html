@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym System</title>
+    
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+<style>
+    /*CSS reset*/
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: 1550px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+
+    .left{
+        /*border: 2px solid red;*/
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 22px;
+    }
+
+    .left img{
+        width: 95px;
+        
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .right{
+        /*border: 2px solid yellow;*/
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 22px;
+        
+    }
+
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 5px 15px;
+        border: 2px solid gray;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+
+    .btn:hover{
+        background-color: grey;
+    }
+
+    .centre{
+        /*border: 2px solid green;*/
+        display: block;
+        width: 40%;
+        margin: 25px auto;
+        
+        
+    }
+
+    .navbar{
+        display: inline-block;
+       
+        
+    }
+
+    .navbar li{
+        display: inline-block;
+      
+        
+    }
+
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 30px 25px;
+        
+    }
+
+    .navbar li a:hover, .navbar li a:active{
+        text-decoration: underline;
+        color: gold;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 85px 30px;
+        padding: 40px 40px;
+        width: 33%;
+        border-radius: 10px;
+    }
+    .form.group input{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 11px auto ;
+        text-align: center;
+        display: block;
+        padding: 12px;
+        width: 384px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;;
+        width: 34%;
+        margin: auto;
+
+    }
+
+
+
+
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img\logo.jpg" alt="" srcset="">
+            <div>Fitness Club</div>
+           
+        </div>
+        <!--centre box for navabr-->
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Fitness Calculator</a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <!--right box for button-->
+        <div class="right">
+            <button class="btn"> Call Us For Inquiry
+
+            </button>
+            <button class="btn"> Email For Inquiry</button>
+
+        </div>
+    </header>
+    <div class="container"> 
+        <h2> Join the best gym of nagpur now</h2>
+        <form action="noaction.php">
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Contact Number">
+            </div>
+            
+            <button class="btn">Submit</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
